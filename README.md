@@ -7,4 +7,6 @@ It's basically plug n' play. <br> <br>
 5. It WILL replace the existing index.php which is also a redirect but to the xampp dashboard instead. So if you want you can back it up but eh. <br>
 6. Start up localhost like usual. <br> <br>
 
-The newly added index.php will open by default upon localhost start in browser and redirect you into custom_dashboard/index.php which is where everything is located.
+The newly added index.php will open by default upon localhost start in browser and redirect you into custom_dashboard/index.php which is where everything is located. <br> <br>
+
+If you have your projects in xampp/htdocs/projects for example you can change the folder name(s) in custom_dashboard/inc/config.php
