@@ -1,7 +1,7 @@
 <?php
-$folderPath = 'C:\laragon';
+$folderPath = 'C:\xampp\htdocs';
 
-// Open the folder in Windows Explorer
+// Open the detected folder in Windows Explorer
 shell_exec('explorer ' . escapeshellarg($folderPath));
 
 // Redirect back to localhost

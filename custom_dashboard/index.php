@@ -1,8 +1,9 @@
 <?php include 'inc/header.php'; ?>
 
 <?php
-$dir = "C:/laragon/www";
-$excluded_folders = array('custom_dashboard');
+// Set project directory for XAMPP
+$dir = "C:/xampp/htdocs";
+$excluded_folders = array('custom_dashboard', 'dashboard', 'img', 'webalizer', 'xampp');
 $projects = array_diff(scandir($dir), array('.', '..'), $excluded_folders);
 
 // Function to get folder size
@@ -59,9 +60,10 @@ function detectFramework($projectPath)
                     $lastModified = date("F d, Y", filemtime($projectPath));
                     $size = round(getFolderSize($projectPath) / (1024 * 1024), 2); // Convert to MB
                     $framework = detectFramework($projectPath);
+                    $projectURL = "http://localhost/$project";
                 ?>
                     <div class="card">
-                        <a href="http://<?= $project ?>.test" target="_blank"><?= ucfirst($project) ?></a>
+                        <a href="<?= $projectURL ?>" target="_blank"><?= ucfirst($project) ?></a>
                         <p>Last Updated: <?= $lastModified ?></p>
                         <p>Size: <?= $size ?> MB</p>
                         <p>Framework: <?= $framework ?></p>
