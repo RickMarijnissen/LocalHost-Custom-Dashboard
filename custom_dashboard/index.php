@@ -1,8 +1,10 @@
-<?php include 'inc/header.php'; ?>
-
 <?php
+
+include 'inc/header.php';
+include 'inc/config.php'; // Load project folder settings
+
 // Set project directory for XAMPP
-$dir = "C:/xampp/htdocs";
+$dir = "C:/xampp/htdocs/$projectfolder/$secondprojectfolder";
 $excluded_folders = array('custom_dashboard', 'dashboard', 'img', 'webalizer', 'xampp');
 $projects = array_diff(scandir($dir), array('.', '..'), $excluded_folders);
 
@@ -60,7 +62,7 @@ function detectFramework($projectPath)
                     $lastModified = date("F d, Y", filemtime($projectPath));
                     $size = round(getFolderSize($projectPath) / (1024 * 1024), 2); // Convert to MB
                     $framework = detectFramework($projectPath);
-                    $projectURL = "http://localhost/$project";
+                    $projectURL = "http://localhost/$projectfolder/$secondprojectfolder/$project";
                 ?>
                     <div class="card">
                         <a href="<?= $projectURL ?>" target="_blank"><?= ucfirst($project) ?></a>
