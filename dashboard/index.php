@@ -36,7 +36,7 @@ function detectFramework($projectPath)
         <div class="quick-links">
             <a class="link" href="http://localhost/" target="_blank">Home</a>
             <a class="link" href="http://localhost/phpmyadmin" target="_blank">phpMyAdmin</a>
-            <a class="link" href="inc/open_folder.php">Open Laragon Folder</a>
+            <a class="link" href="inc/open_folder.php">Open Projects Folder</a>
         </div>
 
         <div class="search-container">
@@ -61,7 +61,7 @@ function detectFramework($projectPath)
                     $framework = detectFramework($projectPath);
                 ?>
                     <div class="card">
-                        <a href="http://<?= $project ?>.test"><?= ucfirst($project) ?></a>
+                        <a href="http://<?= $project ?>.test" target="_blank"><?= ucfirst($project) ?></a>
                         <p>Last Updated: <?= $lastModified ?></p>
                         <p>Size: <?= $size ?> MB</p>
                         <p>Framework: <?= $framework ?></p>
