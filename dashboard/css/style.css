@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* GitHub-Inspired Dark Mode */
+body {
+	background: #0d1117;
+	color: #c9d1d9;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+/* Header & Footer - Same Style */
+header,
+footer {
+	text-align: center;
+	padding: 20px 0;
+	width: 100%;
+	background: #161b22;
+	border-bottom: 1px solid #30363d;
+}
+
+header {
+	color: #c9d1d9;
+}
+
+footer {
+	margin-top: auto;
+	color: #8b949e;
+}
+
+/* Main Layout */
+.container-flex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	width: 97%;
+	max-width: 100%;
+	margin: 2% auto;
+	margin-top: px;
+}
+
+/* Left Section (Quick Links + Search Bar) */
+.left-section {
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+.link {
+	margin-bottom: 15px;
+}
+
+.quick-links a {
+	display: block;
+	padding: 12px;
+	background: #161b22;
+	color: #58a6ff;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	border: 1px solid #30363d;
+	transition: background 0.3s;
+}
+
+.quick-links a:hover {
+	background: #21262d;
+}
+
+/* Search Bar */
+.search-container {
+	padding: 10px;
+	background: #161b22;
+	border-radius: 8px;
+	border: 1px solid #30363d;
+	text-align: center;
+}
+
+#search-bar {
+	width: 90%;
+	padding: 8px;
+	border-radius: 5px;
+	border: 1px solid #30363d;
+	background: #0d1117;
+	color: #c9d1d9;
+	text-align: center;
+}
+
+/* Right Section (Server Info + Projects) */
+.right-section {
+	width: 78%;
+}
+
+.server-info {
+	background: #161b22;
+	padding: 15px;
+	border-radius: 8px;
+	border: 1px solid #30363d;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* Project Grid */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: 20px;
+}
+
+/* Project Cards */
+.card {
+	background: #161b22;
+	padding: 20px;
+	border-radius: 8px;
+	border: 1px solid #30363d;
+	transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+	text-align: center;
+}
+
+.card:hover {
+	background: #21262d;
+	transform: translateY(-5px);
+}
+
+.card a {
+	text-decoration: none;
+	color: #58a6ff;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+/* GitHub-Style Scrollbars */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #161b22;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #30363d;
+	border-radius: 5px;
+}
