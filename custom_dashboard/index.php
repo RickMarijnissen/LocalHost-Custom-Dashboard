@@ -2,7 +2,7 @@
 
 <?php
 $dir = "C:/laragon/www";
-$excluded_folders = array('dashboard');
+$excluded_folders = array('custom_dashboard');
 $projects = array_diff(scandir($dir), array('.', '..'), $excluded_folders);
 
 // Function to get folder size

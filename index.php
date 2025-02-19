@@ -1,3 +1,3 @@
 <?php
-header("Location: http://localhost/dashboard/");
+header("Location: http://localhost/custom_dashboard/");
 exit;
