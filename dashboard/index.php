@@ -34,9 +34,10 @@ function detectFramework($projectPath)
     <!-- Left Section - Quick Links & Search Bar -->
     <div class="left-section">
         <div class="quick-links">
-            <a class="link" href="http://localhost/" target="_blank">Home</a>
+            <a class="link" href="http://localhost/">Home</a>
             <a class="link" href="http://localhost/phpmyadmin" target="_blank">phpMyAdmin</a>
             <a class="link" href="inc/open_folder.php">Open Projects Folder</a>
+            <a class="link" href="casino/slots.php">🎰 Play Slots</a>
         </div>
 
         <div class="search-container">

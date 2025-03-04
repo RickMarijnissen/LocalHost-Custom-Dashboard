@@ -38,7 +38,7 @@ footer {
 .container-flex {
 	display: flex;
 	align-items: flex-start;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	width: 97%;
 	max-width: 100%;
 	margin: 2% auto;
@@ -146,4 +146,60 @@ footer {
 ::-webkit-scrollbar-thumb {
 	background: #30363d;
 	border-radius: 5px;
+}
+
+/* Slot Machine */
+.slot-container {
+	text-align: center;
+	background: #161b22;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid #30363d;
+	width: 300px;
+	margin: auto;
+}
+
+.slot-machine {
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	margin: 20px 0;
+}
+
+.reel {
+	width: 60px;
+	height: 60px;
+	background: #0d1117;
+	border: 2px solid #30363d;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button {
+	background: #58a6ff;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+	margin: 5px;
+}
+
+button:hover {
+	background: #1f6feb;
+}
+
+input[type='number'] {
+	padding: 5px;
+	width: 80px;
+	text-align: center;
+	margin: 5px;
+	border-radius: 5px;
+	border: 1px solid #30363d;
+	background: #0d1117;
+	color: #c9d1d9;
 }
